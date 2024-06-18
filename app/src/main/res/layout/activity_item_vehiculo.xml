@@ -1,0 +1,81 @@
+<!-- res/layout/item_vehiculo.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="8dp"
+    card_view:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvPlaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Placa"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvPropietario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Propietario"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvMarca"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Marca"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvColor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvModelo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Modelo"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
